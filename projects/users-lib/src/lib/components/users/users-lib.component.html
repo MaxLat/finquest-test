@@ -1,0 +1,59 @@
+
+<div class="card text-dark bg-light mb-3" >
+    <div class="card-header h5">Filters</div>
+    <div class="card-body">
+      <form [formGroup]="filterForm"  action="">
+        
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label class="form-label">Firstname</label>
+                <input formControlName="firstname" type="text" class="form-control" placeholder="Firstname">
+            </div>
+
+            <div class="mb-3 col-6">
+                <label class="form-label">Lastname</label>
+                <input formControlName="lastname" type="text" class="form-control" placeholder="Lastname">
+            </div>
+        </div>
+        
+        <div class="form-check">
+          <input class="form-check-input" [value]="null" type="radio"  id="flexRadio1" formControlName="isAlreadyConnected">
+          <label class="form-check-label" for="flexRadio1">
+            Default
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" [value]="true" type="radio"  id="flexRadio2" formControlName="isAlreadyConnected" >
+          <label class="form-check-label" for="flexRadio2">
+            Is already connected
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" [value]="false" type="radio"  id="flexRadio3" formControlName="isAlreadyConnected" >
+          <label class="form-check-label" for="flexRadio3">
+            Is never connected
+          </label>
+        </div>
+          
+      </form>
+    </div>
+  </div>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th sortable="lastname" (sort)="onSort($event)" scope="col">Name</th>
+        <th sortable="isAlreadyConnected" (sort)="onSort($event)" scope="col">Already Connected</th>
+        <th sortable="lastConnectionDate" (sort)="onSort($event)" scope="col">Last Connection Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr [routerLink]="['../user/details', user.id]" *ngFor="let user of users">
+            <th scope="row">{{user.firstname}} {{user.lastname}}</th>
+            <td>{{user.isAlreadyConnected}}</td>
+            <td>{{user.lastConnectionDate | date: 'YYYY/MM/dd'}}</td>
+      </tr> 
+    </tbody>
+  </table>
+</div>

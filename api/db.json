@@ -1,0 +1,28 @@
+{
+    "users": [
+      { "id": "1", "firstname": "max ", "lastname": "lat" , "isAlreadyConnected" : true , "lastConnectionDate" : "2014-03-12T10:00:00+00:00" , "birthdate" : "1994-03-12T10:00:00+00:00" , "skillsId" : ["1","3"] , "departmentId" : "14" , "profileCompletion" : 80 , "countryId" : "1"  },
+      { "id": "2", "firstname": "lewis ", "lastname": "hamilton" , "isAlreadyConnected" : false , "lastConnectionDate" : "2015-03-12T10:00:00+00:00" , "birthdate" : "1995-03-12T10:00:00+00:00" , "skillsId" : [] , "departmentId" : "06" , "profileCompletion" : 80 , "countryId" : "2"  },
+      { "id": "3", "firstname": "max ", "lastname": "verstappen" , "isAlreadyConnected" : false , "lastConnectionDate" : null , "birthdate" : "1996-05-12T10:00:00+00:00" , "skillsId" : [] , "departmentId" : "06" , "profileCompletion" : 50 , "countryId" : "3"},
+      { "id": "4", "firstname": "esteban ", "lastname": "ocon" , "isAlreadyConnected" : true , "lastConnectionDate" : "2015-03-12T10:00:00+00:00",  "birthdate" : "1996-05-12T10:00:00+00:00" , "skillsId" : [] , "departmentId" : "06" , "profileCompletion" : 50 , "countryId" : "3"},
+      { "id": "5", "firstname": "valteri ", "lastname": "bottas" , "isAlreadyConnected" : false , "lastConnectionDate" : null,  "birthdate" : "1996-05-12T10:00:00+00:00" , "skillsId" : ["1"] , "departmentId" : "14" , "profileCompletion" : 50 , "countryId" : "2"},
+      { "id": "6", "firstname": "mick ", "lastname": "schumacher" , "isAlreadyConnected" : false , "lastConnectionDate" : "2014-03-12T10:00:00+00:00", "birthdate" : "1996-05-12T10:00:00+00:00" , "skillsId" : ["3"] , "departmentId" : "14" , "profileCompletion" : 50 , "countryId" : "2" }
+    ],
+    "skills" : [
+        {"id" : "1", "name" : "strong"},
+        {"id" : "2", "name" : "fast"},
+        {"id" : "3", "name" : "smart"},
+        {"id" : "4", "name" : "big"},
+        {"id" : "5", "name" : "thin"},
+        {"id" : "6", "name" : "short"}
+    ],
+    "department" : [
+        {"id" : "57", "name" : "Moselle"},
+        {"id" : "06", "name" : "Alpes-Maritimes"},
+        {"id" : "14", "name" : "Calvados"}
+    ],
+    "country" : [
+        {"id" : "1", "region" : "Asia" , "name" : "Japan"},
+        {"id" : "2", "region" : "Europe" , "name" : "France"},
+        {"id" : "3", "region" : "America" , "name" :"Canada"} 
+    ]
+  }

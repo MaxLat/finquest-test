@@ -1,0 +1,8 @@
+.sidebar {
+    height: calc(100vh - 82px);
+    background-color: gray;
+}
+
+.icons {
+    font-size: 3em;
+}
